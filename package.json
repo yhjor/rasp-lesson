@@ -1,0 +1,8 @@
+{
+  "name": "rasp-lesson",
+  "version": "1.0.0",
+  "description": "For the connection from computer to raspberry pi",
+  "main": "index.js",
+  "author": "George Jor <yhjor@me.com>",
+  "license": "MIT"
+}
