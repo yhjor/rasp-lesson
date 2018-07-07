@@ -4,5 +4,8 @@
   "description": "For the connection from computer to raspberry pi",
   "main": "index.js",
   "author": "George Jor <yhjor@me.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "onoff": "^3.1.0"
+  }
 }
