@@ -1,13 +1,13 @@
-var onoff = require('onoff')
+const onoff = require('onoff')
 
 console.info('Hello from the other side')
 
-var Gpio = onoff.Gpio
-var led = new Gpio(4, 'out')
-var interval
+const Gpio = onoff.Gpio
+const led = new Gpio(4, 'out')
+let interval
 
 interval = setInterval(function() {
-  var value = (led.readSync() + 1) % 2
+  let value = (led.readSync() + 1) % 2
   led.write(value, function() {
     console.log('Changed LED to:' + value)
   })
