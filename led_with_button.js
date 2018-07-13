@@ -1,9 +1,9 @@
 const onoff = require('onoff')
 
-const GPIO = onoff.GPIO
+const Gpio = onoff.Gpio
 
-const led = new GPIO(18, 'out')
-const button = new GPIO(25, 'in', 'rising', { debounceTimeout: 10 })
+const led = new Gpio(18, 'out')
+const button = new Gpio(25, 'in', 'rising', { debounceTimeout: 10 })
 
 button.watch(function(err, value) {
   if (err) {
