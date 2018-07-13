@@ -3,7 +3,7 @@ const onoff = require('onoff')
 console.info('Hello from the other side')
 
 const Gpio = onoff.Gpio
-const led = new Gpio(4, 'out')
+const led = new Gpio(18, 'out')
 let interval
 
 interval = setInterval(function() {
