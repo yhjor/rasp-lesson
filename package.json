@@ -6,6 +6,7 @@
   "author": "George Jor <yhjor@me.com>",
   "license": "MIT",
   "dependencies": {
+    "node-dht-sensor": "0.0.34",
     "onoff": "^3.1.0"
   }
 }
