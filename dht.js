@@ -1,5 +1,5 @@
 var sensorLib = require('node-dht-sensor')
-senserLib.initialize(11, 17)
+sensorLib.initialize(11, 17)
 var interval = setInterval(function() {
   read()
 }, 2000)
