@@ -5,16 +5,18 @@ const Gpio = onoff.Gpio
 const led = new Gpio(18, 'out')
 const button = new Gpio(25, 'in', 'rising', { debounceTimeout: 10 })
 
+const ligthOn = () => led.writeSync(1)
+const lightOff = () => led.writeSync(0)
+
 button.watch((err, value) => {
   if (err) {
     throw err
   }
 
-  // led.writeSync(led.readSync() ^ 1)
-  led.writeSync(1)
+  ligthOn()
 
   setTimeout(() => {
-    led.writeSync(0)
+    lightOff()
   }, 2000)
 })
 
