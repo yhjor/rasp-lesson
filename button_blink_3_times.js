@@ -12,7 +12,10 @@ button.watch((err, value) => {
 
   // led.writeSync(led.readSync() ^ 1)
   led.writeSync(1)
-  led.writeSync(0)
+
+  setTimeout(() => {
+    led.writeSync(0)
+  }, 2000)
 })
 
 process.on('SIGINT', function() {
